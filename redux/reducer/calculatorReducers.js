@@ -25,6 +25,9 @@ export const calculatorReducers = (
       };
 
     default:
-      return { ...state, result:eval(state.number) };
+      return {
+        number:'',
+        result:0
+      };
   }
 };
